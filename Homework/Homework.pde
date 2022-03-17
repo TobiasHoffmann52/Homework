@@ -1,21 +1,19 @@
 void setup() {
-  String[]opgaveListe = loadStrings("input.txt");
+  String[] opgaveListe = loadStrings("input.txt");
 
   String[] dele = opgaveListe[0].split(";");
 
+  String[] talIdel = dele[1].split("-");
 
+  int antalOpgaver;
 
-  /*
-// For elementer med flere opgaver
-   
-   String[] talIdel = dele[0].split("-");
-   
-   int mindstTal = Integer.parseInt(talIdel[0]);
-   int storstTal = Integer.parseInt(talIdel[1]);
-   
-   int antalOpgaver = storstTal - mindstTal + 1;
-   
-   println(antalOpgaver);
-   
-   */
+  if (talIdel.length == 1) {
+    antalOpgaver = 1;
+  } else {
+    int mindstTal = Integer.parseInt(talIdel[0]);
+    int storstTal = Integer.parseInt(talIdel[1]);
+
+    antalOpgaver = storstTal - mindstTal + 1;
+  }
+  println(antalOpgaver);
 }
