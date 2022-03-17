@@ -3,7 +3,7 @@ void setup() {
 
   String[] dele = opgaveListe[0].split(";");
 
-  String[] talIdel = dele[1].split("-");
+  String[] talIdel = dele[0].split("-");
 
   int antalOpgaver;
 
