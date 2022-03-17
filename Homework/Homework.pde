@@ -15,5 +15,6 @@ void setup() {
 
     antalOpgaver = storstTal - mindstTal + 1;
   }
-  println(antalOpgaver);
+  String[] svar = "antalopgaver";
+  saveStrings("output.txt", "antalOpgaver");
 }
