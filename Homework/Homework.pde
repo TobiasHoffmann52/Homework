@@ -15,6 +15,8 @@ void setup() {
 
     antalOpgaver = storstTal - mindstTal + 1;
   }
-  String[] svar = "antalopgaver";
-  saveStrings("output.txt", "antalOpgaver");
+  String svar = Integer.toString(antalOpgaver);
+  String[] svarArray;
+  svarArray[0]= svar;
+  saveStrings("output.txt", svarArray[]);
 }
