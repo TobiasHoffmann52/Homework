@@ -20,9 +20,8 @@ void setup() {
   }
 
   String svar = Integer.toString(samletAntalOpgaver);
-   
-   String[] svarArray = new String[1];
-   svarArray[0] = svar;
-   saveStrings("output.txt", svarArray);
- 
+
+  String[] svarArray = new String[1];
+  svarArray[0] = svar;
+  saveStrings("output.txt", svarArray);
 }
